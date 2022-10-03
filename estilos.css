@@ -8,22 +8,22 @@ body {
     background: url("https://i.pinimg.com/originals/5d/86/c9/5d86c9c170bb74113315cb88aad15e2b.jpg");
     background-size: cover;
     color:antiquewhite;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .wrap{
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin:auto;
 }
 
 .widget{
-    width: 50%;
+    width: 40%;
     margin: 2em; 
 }
 .widget p {
     display: inline-block;
-    line-height: 1em;
+    line-height: 2em;
 }
 
 .fecha{
@@ -39,19 +39,20 @@ body {
 .reloj {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
-    padding: 20px;
-    font-size: 4em;
+    padding: 10px;
+    font-size: 2em;
     text-align: center;
     background: rgba(0, 0, 0, .5);
 }
 
 .reloj .cajasegundos {
-    display: inline-block;
+   display: inline-block;
 }
 
-.reloj .segundos, .reloj .ampm {
-    font-size: 2em;
-    display: block;
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 1em;
+    display:inline;
 }
 
 
