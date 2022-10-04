@@ -16,6 +16,8 @@
         dia = fecha.getDate(),
         mes = fecha.getMonth(),
         año = fecha.getFullYear();
+       
+
 
     /*Ahora vamos a mostrar la infomracion usando los parrafos en HTML y debemos acceder a cada uno de ellos
     Accedemos a su ubicaion en HTML y la guardamos en una variables, mediante la obtencion del elemento por el ID*/
@@ -28,6 +30,7 @@
         pDia = document.getElementById('dia'),
         pMes = document.getElementById('mes'),
         pAño = document.getElementById('año');
+       
     
                                                 /*Inicio del widget de la fecha*/
 
@@ -85,9 +88,11 @@
     pSegundos.textContent = segundos;
 
                                                     /*Fin del Widget de la hora*/
-
+   
 
    };
+
+  
 
                         /*Por ultimo, haremos que el reloj se vaya actualizando segundo a segundo, para eso creamos 
                         una variable y ejecutamos la funcion y le pedimos que se actualice segundo a segundo*/
@@ -96,3 +101,16 @@
    var intervalo = setInterval(actualizarHora, 1000);
 
 }())
+
+/*function(){
+    var actualizarCiudad = function(){
+
+    var geo = new Geolocation(),
+    ciudad = geo.getCurrentPosition,
+    pGeo = document.getElementById('ciudad');
+
+    Pgeo.textContent = geo[ciudad];
+    };
+
+    actualizarCiudad();
+};*/
