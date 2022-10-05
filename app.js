@@ -89,28 +89,33 @@
 
                                                     /*Fin del Widget de la hora*/
    
-
+                                                    
    };
 
   
 
                         /*Por ultimo, haremos que el reloj se vaya actualizando segundo a segundo, para eso creamos 
                         una variable y ejecutamos la funcion y le pedimos que se actualice segundo a segundo*/
-
+    var intervalo = setInterval(actualizarHora, 1000);
    actualizarHora();
-   var intervalo = setInterval(actualizarHora, 1000);
+   
+
 
 }())
 
-/*function(){
+
+
+   /*(function(){
     var actualizarCiudad = function(){
 
     var geo = new Geolocation(),
     ciudad = geo.getCurrentPosition,
     pGeo = document.getElementById('ciudad');
 
-    Pgeo.textContent = geo[ciudad];
+    pGeo.textContent = geo[ciudad];
     };
 
-    actualizarCiudad();
-};*/
+    console.log(ciudad)
+});
+                                  
+actualizarCiudad();*/
